@@ -1,0 +1,13 @@
+<Project>
+<ProjectName>Paxos</ProjectName>
+<InputFiles>
+	<PFile>./PSrc/</PFile>
+	<PFile>./PSpec/</PFile>
+	<PFile>./PTst/</PFile>
+</InputFiles>
+<Target>CSharp</Target>
+<OutputDir>./PGenerated/</OutputDir>
+<IncludeProject>../Common/Timer/Timer.pproj</IncludeProject>
+<IncludeProject>../Common/FailureInjector/FailureInjector.pproj</IncludeProject>
+<IncludeProject>../Common/StateMachineReplication/StateMachineReplication.pproj</IncludeProject>
+</Project>

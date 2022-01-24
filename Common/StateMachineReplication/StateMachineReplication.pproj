@@ -1,0 +1,8 @@
+<!-- P Project file for the StateMachineReplication Module-->
+<Project>
+<ProjectName>StateMachineReplication</ProjectName>
+<InputFiles>
+	<PFile>./PSrc/</PFile>
+</InputFiles>
+<OutputDir>./PGenerated/</OutputDir>
+</Project>

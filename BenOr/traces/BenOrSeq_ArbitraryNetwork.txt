@@ -1,0 +1,387 @@
+<TestLog> Running test 'PImplementation.TestSeqAgreementArbitraryNetwork.Execute'.
+<CreateLog> Agreement was created.
+<MonitorLog> Agreement enters state 'Init_3'.
+<CreateLog> Plang.CSharpRuntime._GodMachine(1) was created by task '2'.
+<CreateLog> PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2) was created by Plang.CSharpRuntime._GodMachine(1).
+<StateLog> PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2) enters state 'Init_7'.
+<CreateLog> Participant(3) was created by PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2).
+<CreateLog> Participant(4) was created by PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2).
+<StateLog> Participant(3) enters state 'Init_6'.
+<CreateLog> Participant(5) was created by PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2).
+<StateLog> Participant(5) enters state 'Init_6'.
+<StateLog> Participant(4) enters state 'Init_6'.
+<CreateLog> BenOrSeq_ArbitraryNetwork(6) was created by PImplementation.TestDriverSeqAgreement_ArbitraryNetwork(2).
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Init'.
+<PrintLog> Participant(3) start with ESTIMATE 0
+<PrintLog> Participant(4) start with ESTIMATE 0
+<PrintLog> Participant(5) start with ESTIMATE 0
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Init' to state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Init'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Report'.
+<PrintLog> Participant(3) send REPORT message <phase:0, from:Participant(3), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 0 in phase 0 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:0, from:Participant(4), payload:0, > to Participant(3)
+<PrintLog> Participant(5) send REPORT message <phase:0, from:Participant(5), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 0 in phase 0 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:0, from:Participant(3), payload:0, > to Participant(4)
+<PrintLog> Participant(4) send REPORT message <phase:0, from:Participant(4), payload:0, > to Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:0, from:Participant(5), payload:0, > to Participant(4)
+<PrintLog> Participant(3) send REPORT message <phase:0, from:Participant(3), payload:0, > to Participant(5)
+<PrintLog> Participant(4) send REPORT message <phase:0, from:Participant(4), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:0, from:Participant(4), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(4), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 0 in phase 0 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:0, from:Participant(5), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 0 in phase 0 from Participant(5)
+<PrintLog> Participant(3) REPORT mayority 0 in phase 0, mailbox: (<0->(<<phase:0, from:Participant(3), payload:0, >>, <<phase:0, from:Participant(5), payload:0, >>)>, <1->()>), size 2
+<PrintLog> Participant(4) REPORT mayority -1 in phase 0, mailbox: (<0->()>, <1->()>), size 0
+<PrintLog> Participant(5) REPORT mayority 0 in phase 0, mailbox: (<0->(<<phase:0, from:Participant(4), payload:0, >>, <<phase:0, from:Participant(5), payload:0, >>)>, <1->()>), size 2
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Report' to state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Proposal'.
+<PrintLog> Participant(3) send PROPOSAL message <phase:0, from:Participant(3), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate 0 in phase 0
+<PrintLog> Participant(4) send PROPOSAL message <phase:0, from:Participant(4), payload:-1, > to Participant(3)
+<PrintLog> Participant(5) send PROPOSAL message <phase:0, from:Participant(5), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(5), payload:0, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate 0 in phase 0
+<PrintLog> Participant(3) send PROPOSAL message <phase:0, from:Participant(3), payload:0, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate 0 in phase 0
+<PrintLog> Participant(4) send PROPOSAL message <phase:0, from:Participant(4), payload:-1, > to Participant(4)
+<PrintLog> Participant(5) send PROPOSAL message <phase:0, from:Participant(5), payload:0, > to Participant(4)
+<PrintLog> Participant(3) send PROPOSAL message <phase:0, from:Participant(3), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(3), payload:0, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate 0 in phase 0
+<PrintLog> Participant(4) send PROPOSAL message <phase:0, from:Participant(4), payload:-1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:0, from:Participant(4), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:0, from:Participant(4), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate -1 in phase 0
+<PrintLog> Participant(5) send PROPOSAL message <phase:0, from:Participant(5), payload:0, > to Participant(5)
+<PrintLog> Participant(3) received enough PROPOSAL messages in phase 0, (<<phase:0, from:Participant(3), payload:0, >>, <<phase:0, from:Participant(5), payload:0, >>)
+<PrintLog> Participant(3) Decided 0 in phase 0
+<MonitorLog> PImplementation.Agreement is processing event 'PImplementation.eMonitor_NewDecision' in state 'Init_3'.
+<PrintLog> Participant(4) received enough PROPOSAL messages in phase 0, (<<phase:0, from:Participant(3), payload:0, >>)
+<PrintLog> get_valid_estimate (<<phase:0, from:Participant(3), payload:0, >>)
+<PrintLog> get_valid_estimate (<<phase:0, from:Participant(3), payload:0, >>)
+<PrintLog> Participant(4) changed estimate to 0 in phase 0
+<PrintLog> Participant(5) received enough PROPOSAL messages in phase 0, (<<phase:0, from:Participant(3), payload:0, >>, <<phase:0, from:Participant(4), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:0, from:Participant(3), payload:0, >>, <<phase:0, from:Participant(4), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:0, from:Participant(3), payload:0, >>, <<phase:0, from:Participant(4), payload:-1, >>)
+<PrintLog> Participant(5) changed estimate to 0 in phase 0
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Proposal' to state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Report'.
+<PrintLog> Participant(3) send REPORT message <phase:1, from:Participant(3), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 0 in phase 1 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:1, from:Participant(4), payload:0, > to Participant(3)
+<PrintLog> Participant(5) send REPORT message <phase:1, from:Participant(5), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:1, from:Participant(5), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(5), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 0 in phase 1 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:1, from:Participant(3), payload:0, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(4) received REPORT estimate 0 in phase 1 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:1, from:Participant(4), payload:0, > to Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:1, from:Participant(5), payload:0, > to Participant(4)
+<PrintLog> Participant(3) send REPORT message <phase:1, from:Participant(3), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 0 in phase 1 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:1, from:Participant(4), payload:0, > to Participant(5)
+<PrintLog> Participant(5) send REPORT message <phase:1, from:Participant(5), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:1, from:Participant(5), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(5), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 0 in phase 1 from Participant(5)
+<PrintLog> Participant(3) REPORT mayority 0 in phase 1, mailbox: (<0->(<<phase:1, from:Participant(3), payload:0, >>, <<phase:1, from:Participant(5), payload:0, >>)>, <1->()>), size 2
+<PrintLog> Participant(4) REPORT mayority -1 in phase 1, mailbox: (<0->(<<phase:1, from:Participant(3), payload:0, >>)>, <1->()>), size 1
+<PrintLog> Participant(5) REPORT mayority 0 in phase 1, mailbox: (<0->(<<phase:1, from:Participant(3), payload:0, >>, <<phase:1, from:Participant(5), payload:0, >>)>, <1->()>), size 2
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Report' to state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Proposal'.
+<PrintLog> Participant(3) send PROPOSAL message <phase:1, from:Participant(3), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:1, from:Participant(3), payload:0, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate 0 in phase 1
+<PrintLog> Participant(4) send PROPOSAL message <phase:1, from:Participant(4), payload:-1, > to Participant(3)
+<PrintLog> Participant(5) send PROPOSAL message <phase:1, from:Participant(5), payload:0, > to Participant(3)
+<PrintLog> Participant(3) send PROPOSAL message <phase:1, from:Participant(3), payload:0, > to Participant(4)
+<PrintLog> Participant(4) send PROPOSAL message <phase:1, from:Participant(4), payload:-1, > to Participant(4)
+<PrintLog> Participant(5) send PROPOSAL message <phase:1, from:Participant(5), payload:0, > to Participant(4)
+<PrintLog> Participant(3) send PROPOSAL message <phase:1, from:Participant(3), payload:0, > to Participant(5)
+<PrintLog> Participant(4) send PROPOSAL message <phase:1, from:Participant(4), payload:-1, > to Participant(5)
+<PrintLog> Participant(5) send PROPOSAL message <phase:1, from:Participant(5), payload:0, > to Participant(5)
+<PrintLog> Participant(3) received enough PROPOSAL messages in phase 1, (<<phase:1, from:Participant(3), payload:0, >>)
+<PrintLog> get_valid_estimate (<<phase:1, from:Participant(3), payload:0, >>)
+<PrintLog> get_valid_estimate (<<phase:1, from:Participant(3), payload:0, >>)
+<PrintLog> Participant(3) changed estimate to 0 in phase 1
+<PrintLog> Participant(4) received enough PROPOSAL messages in phase 1, ()
+<PrintLog> get_valid_estimate ()
+<PrintLog> Participant(4) Flip a coin 1
+<PrintLog> Participant(5) received enough PROPOSAL messages in phase 1, ()
+<PrintLog> get_valid_estimate ()
+<PrintLog> Participant(5) Flip a coin 1
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Proposal' to state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Report'.
+<PrintLog> Participant(3) send REPORT message <phase:2, from:Participant(3), payload:0, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 0 in phase 2 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:2, from:Participant(4), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:2, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 2 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:2, from:Participant(5), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:2, from:Participant(5), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(5), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 2 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:2, from:Participant(3), payload:0, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(4) received REPORT estimate 0 in phase 2 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:2, from:Participant(4), payload:1, > to Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:2, from:Participant(5), payload:1, > to Participant(4)
+<PrintLog> Participant(3) send REPORT message <phase:2, from:Participant(3), payload:0, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(3), payload:0, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 0 in phase 2 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:2, from:Participant(4), payload:1, > to Participant(5)
+<PrintLog> Participant(5) send REPORT message <phase:2, from:Participant(5), payload:1, > to Participant(5)
+<PrintLog> Participant(3) REPORT mayority 1 in phase 2, mailbox: (<0->(<<phase:2, from:Participant(3), payload:0, >>, <<phase:2, from:Participant(4), payload:1, >>, <<phase:2, from:Participant(5), payload:1, >>)>, <1->()>), size 3
+<PrintLog> Participant(4) REPORT mayority -1 in phase 2, mailbox: (<0->(<<phase:2, from:Participant(3), payload:0, >>)>, <1->()>), size 1
+<PrintLog> Participant(5) REPORT mayority -1 in phase 2, mailbox: (<0->(<<phase:2, from:Participant(3), payload:0, >>)>, <1->()>), size 1
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Report' to state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Proposal'.
+<PrintLog> Participant(3) send PROPOSAL message <phase:2, from:Participant(3), payload:1, > to Participant(3)
+<PrintLog> Participant(4) send PROPOSAL message <phase:2, from:Participant(4), payload:-1, > to Participant(3)
+<PrintLog> Participant(5) send PROPOSAL message <phase:2, from:Participant(5), payload:-1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:2, from:Participant(5), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(5), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate -1 in phase 2
+<PrintLog> Participant(3) send PROPOSAL message <phase:2, from:Participant(3), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:2, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate 1 in phase 2
+<PrintLog> Participant(4) send PROPOSAL message <phase:2, from:Participant(4), payload:-1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:2, from:Participant(4), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(4), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate -1 in phase 2
+<PrintLog> Participant(5) send PROPOSAL message <phase:2, from:Participant(5), payload:-1, > to Participant(4)
+<PrintLog> Participant(3) send PROPOSAL message <phase:2, from:Participant(3), payload:1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:2, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate 1 in phase 2
+<PrintLog> Participant(4) send PROPOSAL message <phase:2, from:Participant(4), payload:-1, > to Participant(5)
+<PrintLog> Participant(5) send PROPOSAL message <phase:2, from:Participant(5), payload:-1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:2, from:Participant(5), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:2, from:Participant(5), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate -1 in phase 2
+<PrintLog> Participant(3) received enough PROPOSAL messages in phase 2, (<<phase:2, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:2, from:Participant(5), payload:-1, >>)
+<PrintLog> Participant(3) Flip a coin 0
+<PrintLog> Participant(4) received enough PROPOSAL messages in phase 2, (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(4), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(4), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(4), payload:-1, >>)
+<PrintLog> Participant(4) changed estimate to 1 in phase 2
+<PrintLog> Participant(5) received enough PROPOSAL messages in phase 2, (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:2, from:Participant(3), payload:1, >>, <<phase:2, from:Participant(5), payload:-1, >>)
+<PrintLog> Participant(5) changed estimate to 1 in phase 2
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Proposal' to state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Report'.
+<PrintLog> Participant(3) send REPORT message <phase:3, from:Participant(3), payload:0, > to Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:3, from:Participant(4), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 3 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:3, from:Participant(5), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:3, from:Participant(5), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(5), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 3 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:3, from:Participant(3), payload:0, > to Participant(4)
+<PrintLog> Participant(4) send REPORT message <phase:3, from:Participant(4), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(4) received REPORT estimate 1 in phase 3 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:3, from:Participant(5), payload:1, > to Participant(4)
+<PrintLog> Participant(3) send REPORT message <phase:3, from:Participant(3), payload:0, > to Participant(5)
+<PrintLog> Participant(4) send REPORT message <phase:3, from:Participant(4), payload:1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 1 in phase 3 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:3, from:Participant(5), payload:1, > to Participant(5)
+<PrintLog> Participant(3) REPORT mayority 1 in phase 3, mailbox: (<0->(<<phase:3, from:Participant(4), payload:1, >>, <<phase:3, from:Participant(5), payload:1, >>)>, <1->()>), size 2
+<PrintLog> Participant(4) REPORT mayority -1 in phase 3, mailbox: (<0->(<<phase:3, from:Participant(4), payload:1, >>)>, <1->()>), size 1
+<PrintLog> Participant(5) REPORT mayority -1 in phase 3, mailbox: (<0->(<<phase:3, from:Participant(4), payload:1, >>)>, <1->()>), size 1
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Report' to state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Proposal'.
+<PrintLog> Participant(3) send PROPOSAL message <phase:3, from:Participant(3), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate 1 in phase 3
+<PrintLog> Participant(4) send PROPOSAL message <phase:3, from:Participant(4), payload:-1, > to Participant(3)
+<PrintLog> Participant(5) send PROPOSAL message <phase:3, from:Participant(5), payload:-1, > to Participant(3)
+<PrintLog> Participant(3) send PROPOSAL message <phase:3, from:Participant(3), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate 1 in phase 3
+<PrintLog> Participant(4) send PROPOSAL message <phase:3, from:Participant(4), payload:-1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(4), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(4), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate -1 in phase 3
+<PrintLog> Participant(5) send PROPOSAL message <phase:3, from:Participant(5), payload:-1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(5), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(5), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate -1 in phase 3
+<PrintLog> Participant(3) send PROPOSAL message <phase:3, from:Participant(3), payload:1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate 1 in phase 3
+<PrintLog> Participant(4) send PROPOSAL message <phase:3, from:Participant(4), payload:-1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(4), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(4), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate -1 in phase 3
+<PrintLog> Participant(5) send PROPOSAL message <phase:3, from:Participant(5), payload:-1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:3, from:Participant(5), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:3, from:Participant(5), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(5) received PROPOSAL estimate -1 in phase 3
+<PrintLog> Participant(3) received enough PROPOSAL messages in phase 3, (<<phase:3, from:Participant(3), payload:1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>)
+<PrintLog> Participant(3) changed estimate to 1 in phase 3
+<PrintLog> Participant(4) received enough PROPOSAL messages in phase 3, (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> Participant(4) changed estimate to 1 in phase 3
+<PrintLog> Participant(5) received enough PROPOSAL messages in phase 3, (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:3, from:Participant(3), payload:1, >>, <<phase:3, from:Participant(4), payload:-1, >>, <<phase:3, from:Participant(5), payload:-1, >>)
+<PrintLog> Participant(5) changed estimate to 1 in phase 3
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Proposal' to state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Report'.
+<PrintLog> Participant(3) send REPORT message <phase:4, from:Participant(3), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 4 from Participant(3)
+<PrintLog> Participant(4) send REPORT message <phase:4, from:Participant(4), payload:1, > to Participant(3)
+<PrintLog> Participant(5) send REPORT message <phase:4, from:Participant(5), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:4, from:Participant(5), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(5), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(3) received REPORT estimate 1 in phase 4 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:4, from:Participant(3), payload:1, > to Participant(4)
+<PrintLog> Participant(4) send REPORT message <phase:4, from:Participant(4), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(4) received REPORT estimate 1 in phase 4 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:4, from:Participant(5), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:4, from:Participant(5), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(5), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(4) received REPORT estimate 1 in phase 4 from Participant(5)
+<PrintLog> Participant(3) send REPORT message <phase:4, from:Participant(3), payload:1, > to Participant(5)
+<PrintLog> Participant(4) send REPORT message <phase:4, from:Participant(4), payload:1, > to Participant(5)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Report' sent event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' in state 'Report'.
+<PrintLog> Participant(5) received REPORT estimate 1 in phase 4 from Participant(4)
+<PrintLog> Participant(5) send REPORT message <phase:4, from:Participant(5), payload:1, > to Participant(5)
+<PrintLog> Participant(3) REPORT mayority 1 in phase 4, mailbox: (<0->(<<phase:4, from:Participant(3), payload:1, >>, <<phase:4, from:Participant(5), payload:1, >>)>, <1->()>), size 2
+<PrintLog> Participant(4) REPORT mayority 1 in phase 4, mailbox: (<0->(<<phase:4, from:Participant(4), payload:1, >>, <<phase:4, from:Participant(5), payload:1, >>)>, <1->()>), size 2
+<PrintLog> Participant(5) REPORT mayority -1 in phase 4, mailbox: (<0->(<<phase:4, from:Participant(4), payload:1, >>)>, <1->()>), size 1
+<GotoLog> BenOrSeq_ArbitraryNetwork(6) is transitioning from state 'Report' to state 'Proposal'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) exits state 'Report'.
+<StateLog> BenOrSeq_ArbitraryNetwork(6) enters state 'Proposal'.
+<PrintLog> Participant(3) send PROPOSAL message <phase:4, from:Participant(3), payload:1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate 1 in phase 4
+<PrintLog> Participant(4) send PROPOSAL message <phase:4, from:Participant(4), payload:1, > to Participant(3)
+<PrintLog> Participant(5) send PROPOSAL message <phase:4, from:Participant(5), payload:-1, > to Participant(3)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:4, from:Participant(5), payload:-1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(5), payload:-1, >)' in state 'Proposal'.
+<PrintLog> Participant(3) received PROPOSAL estimate -1 in phase 4
+<PrintLog> Participant(3) send PROPOSAL message <phase:4, from:Participant(3), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(3), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate 1 in phase 4
+<PrintLog> Participant(4) send PROPOSAL message <phase:4, from:Participant(4), payload:1, > to Participant(4)
+<SendLog> 'BenOrSeq_ArbitraryNetwork(6)' in state 'Proposal' sent event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' to 'BenOrSeq_ArbitraryNetwork(6)'.
+<ReceiveLog> 'BenOrSeq_ArbitraryNetwork(6)' dequeued event 'eMessage with payload (<phase:4, from:Participant(4), payload:1, >)' in state 'Proposal'.
+<PrintLog> Participant(4) received PROPOSAL estimate 1 in phase 4
+<PrintLog> Participant(5) send PROPOSAL message <phase:4, from:Participant(5), payload:-1, > to Participant(4)
+<PrintLog> Participant(3) send PROPOSAL message <phase:4, from:Participant(3), payload:1, > to Participant(5)
+<PrintLog> Participant(4) send PROPOSAL message <phase:4, from:Participant(4), payload:1, > to Participant(5)
+<PrintLog> Participant(5) send PROPOSAL message <phase:4, from:Participant(5), payload:-1, > to Participant(5)
+<PrintLog> Participant(3) received enough PROPOSAL messages in phase 4, (<<phase:4, from:Participant(3), payload:1, >>, <<phase:4, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:4, from:Participant(3), payload:1, >>, <<phase:4, from:Participant(5), payload:-1, >>)
+<PrintLog> get_valid_estimate (<<phase:4, from:Participant(3), payload:1, >>, <<phase:4, from:Participant(5), payload:-1, >>)
+<PrintLog> Participant(3) changed estimate to 1 in phase 4
+<PrintLog> Participant(4) received enough PROPOSAL messages in phase 4, (<<phase:4, from:Participant(3), payload:1, >>, <<phase:4, from:Participant(4), payload:1, >>)
+<PrintLog> Participant(4) Decided 1 in phase 4
+<MonitorLog> PImplementation.Agreement is processing event 'PImplementation.eMonitor_NewDecision' in state 'Init_3'.
+<ErrorLog> Assertion Failed: Agreement failed by Participant(4), decided 1 but other decided 0
+<StackTrace>    at Microsoft.Coyote.SystematicTesting.OperationScheduler.NotifyAssertionFailure(String text, Boolean killTasks, Boolean cancelExecution)
+   at Microsoft.Coyote.SystematicTesting.ControlledRuntime.Assert(Boolean predicate, String s, Object[] args)
+   at Microsoft.Coyote.Specifications.Monitor.Assert(Boolean predicate, String s, Object[] args)
+   at Plang.CSharpRuntime.PMonitor.TryAssert(Boolean predicate, String s, Object[] args)
+   at PImplementation.Agreement.Anon_16(Event currentMachine_dequeuedEvent)
+   at Microsoft.Coyote.Specifications.Monitor.ExecuteAction(CachedDelegate cachedAction, Event e)
+   at Microsoft.Coyote.Specifications.Monitor.Do(String actionName, Event e)
+   at Microsoft.Coyote.SystematicTesting.ControlledRuntime.Monitor(Type type, Event e, String senderName, String senderType, String senderStateName)
+   at Microsoft.Coyote.Actors.Actor.Monitor(Type type, Event e)
+   at Plang.CSharpRuntime.PMachine.AnnounceInternal(Event ev)
+   at Plang.CSharpRuntime.PMachine.Announce(Event ev, Object payload)
+   at PImplementation.BenOrSeq_ArbitraryNetwork.Anon_2(Event currentMachine_dequeuedEvent)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at PImplementation.BenOrSeq_ArbitraryNetwork.Anon_2(Event currentMachine_dequeuedEvent)
+   at Microsoft.Coyote.Actors.Actor.InvokeActionAsync(CachedDelegate cachedAction, Event e)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.Actors.Actor.InvokeActionAsync(CachedDelegate cachedAction, Event e)
+   at Microsoft.Coyote.Actors.StateMachine.ExecuteCurrentStateOnEntryAsync(Event e)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.Actors.StateMachine.ExecuteCurrentStateOnEntryAsync(Event e)
+   at Microsoft.Coyote.Actors.StateMachine.GotoStateAsync(Type s, String onExitActionName, Event e)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.Actors.StateMachine.GotoStateAsync(Type s, String onExitActionName, Event e)
+   at Microsoft.Coyote.Actors.StateMachine.HandleEventAsync(Event e)
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.Actors.StateMachine.HandleEventAsync(Event e)
+   at Microsoft.Coyote.Actors.Actor.RunEventHandlerAsync()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.Actors.Actor.RunEventHandlerAsync()
+   at Microsoft.Coyote.SystematicTesting.ControlledRuntime.<>c__DisplayClass31_0.<<RunActorEventHandler>b__0>d.MoveNext()
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[TStateMachine](TStateMachine& stateMachine)
+   at Microsoft.Coyote.SystematicTesting.ControlledRuntime.<>c__DisplayClass31_0.<RunActorEventHandler>b__0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteEntryUnsafe(Thread threadPoolThread)
+   at System.Threading.Tasks.Task.ExecuteFromThreadPool(Thread threadPoolThread)
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+   at System.Threading._ThreadPoolWaitCallback.PerformWaitCallback()
+
+<StrategyLog> Found bug using 'random' strategy.
+<StrategyLog> Testing statistics:
+<StrategyLog> Found 1 bug.
+<StrategyLog> Scheduling statistics:
+<StrategyLog> Explored 1 schedule: 1 fair and 0 unfair.
+<StrategyLog> Found 100.00% buggy schedules.
+<StrategyLog> Number of scheduling points in fair terminating schedules: 301 (min), 301 (avg), 301 (max).
