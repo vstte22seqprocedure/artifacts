@@ -1,4 +1,4 @@
-# Artifacts for paper "Sequentialization of fault-tolerant protocols"
+# Artifacts for paper "A sequentialization procedure for fault-tolerant protocols"
 
 Every protocol is contained in a directory with instructions for compiling.
 
